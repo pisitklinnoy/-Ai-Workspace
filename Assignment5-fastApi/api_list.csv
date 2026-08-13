@@ -1,0 +1,5 @@
+﻿Method,Path,Summary,Tags,Request Body,Response Codes,Description
+POST,/api/v1/auth/signup,User Signup / Registration,Authentication API (Login / Signin),Yes,"201, 422","Accepts user signup details, validates schema, hashes password, and saves user without returning password."
+POST,/api/v1/auth/login,User Login / Signin,Authentication API (Login / Signin),Yes,"200, 422",Authenticates credentials and returns a Bearer JWT Token.
+GET,/api/v1/auth/me,Get Authenticated User Profile,Authentication API (Login / Signin),No,200,Protected endpoint demonstrating token verification using Dependency Injection.
+GET,/,Root,Health Check,No,200,
